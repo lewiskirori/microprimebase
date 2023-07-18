@@ -63,7 +63,7 @@ nav ul li a:hover::after {
 
 .current-page a {
     color: #2e3339;
-    border-bottom: 3px solid #2e3339;
+    border-bottom: 4px solid #2e3339;
 }
 
 .menu {
