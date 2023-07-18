@@ -1,3 +1,3 @@
 # primebase
 
-### `Making Your Financial Dreams a Reality. `
+### `Making your financial dreams a reality. `
