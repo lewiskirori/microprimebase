@@ -326,13 +326,6 @@ footer {
 
     .contact form {
         max-width: 100%;
-        margin: 0 auto;
-    }
-
-    .contact input[type="text"],
-    .contact input[type="email"],
-    .contact textarea {
-        width: 100%;
     }
 }
 
