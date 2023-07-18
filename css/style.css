@@ -327,6 +327,13 @@ footer {
     .contact form {
         max-width: 100%;
     }
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    .contact textarea {
+        width: 100%;
+        max-width: 80%;
+    }
 }
 
 /* Services */
