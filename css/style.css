@@ -295,6 +295,8 @@ footer {
     text-align: center;
 }
 
+/* Responsiveness */
+
 
 @media only screen and (max-width: 768px) {
     .logo img {
@@ -321,6 +323,17 @@ footer {
 
     .hero-content {
         padding: 50px 0px;
+    }
+
+    .contact form {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .contact input[type="text"],
+    .contact input[type="email"],
+    .contact textarea {
+        width: 100%;
     }
 }
 
