@@ -18,7 +18,7 @@
 <body>
     <header>
         <div class="logo">
-            <a onclick="navigateTo('index.php')" style="cursor: pointer;"><img src="images/primeb-logo002--preview.png" alt="PrimeBase Logo"></a>
+            <a onclick="navigateTo('index.htm')" style="cursor: pointer;"><img src="images/primeb-logo002--preview.png" alt="PrimeBase Logo"></a>
         </div>
         <nav>
             <div class="menu-icon" id="menu-icon">
@@ -30,7 +30,7 @@
                 &#10006;
             </div>
             <ul class="menu" id="menu">
-                <li class="current-page home-page"><a onclick="navigateTo('index.php')" style="cursor: pointer;">Home</a></li>
+                <li class="current-page home-page"><a onclick="navigateTo('index.htm')" style="cursor: pointer;">Home</a></li>
                 <li class="services-page"><a onclick="navigateTo('services.php')" style="cursor: pointer;">Services</a></li>
                 <li class="about-page"><a onclick="navigateTo('about.php')" style="cursor: pointer;">About</a></li>
                 <li class="contact-page"><a onclick="navigateTo('#contact')" style="cursor: pointer;">Contact</a></li>
