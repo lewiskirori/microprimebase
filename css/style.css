@@ -1,7 +1,8 @@
 /* Global */
 
 body {
-    font-family: 'Schibsted Grotesk', sans-serif;    margin: 0;
+    font-family: 'Schibsted Grotesk', sans-serif;    
+    margin: 0;
     padding: 0;
 }
 
@@ -256,7 +257,7 @@ nav ul li a:hover::after {
     outline: none;
     border: 1px solid #2e3339;
     border-radius: 4px;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Schibsted Grotesk', sans-serif;
 }
 
 .contact textarea {
