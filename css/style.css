@@ -1,0 +1,391 @@
+/* Global */
+
+body {
+    font-family: 'Schibsted Grotesk', sans-serif;    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    object-fit: cover;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2e3339;
+    position: relative;
+}
+
+nav ul li a::before,
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #2e3339;
+    transition: width 0.3s ease;
+}
+
+nav ul li a::before {
+    left: 0;
+}
+
+nav ul li a::after {
+    right: 0;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.current-page a {
+    color: #2e3339;
+    border-bottom: 3px solid #2e3339;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin-right: 10px;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-icon-bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #1f2428;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.menu-icon-bar:last-child {
+    margin-bottom: 0;
+}
+
+.menu.show .menu-icon-bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu.show .menu-icon-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu.show .menu-icon-bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu.show .menu-icon-bar {
+    background-color: #2e3339;
+}
+
+.menu-icon-close {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.menu.show .menu-icon-close {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Hero section */
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    color: #777;
+}
+
+.hero-image img {
+    max-width: 100%;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2e3339;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: background-color 0.3 ease;
+}
+
+.cta-button:hover {
+    background-color: #1f2428;
+}
+
+/* Testimonials */
+
+.testimonials {
+    padding: 50px 0;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.testimonials .testimonial {
+    margin-bottom: 40px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.testimonials .testimonial img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonials .testimonial p {
+    margin-bottom: 10px;
+}
+
+.testimonials .client-name {
+    font-weight: 700;
+}
+
+/* Loan process */
+
+.loan-process {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.loan-process .step {
+    margin-bottom: 40px;
+}
+
+.loan-process .step img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.loan-process h3 {
+    margin-bottom: 10px;
+}
+
+/* Contact */
+
+.contact {
+    padding: 50px 0;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 400px;
+    margin: 0 auto 20px;
+    text-align: left;
+}
+
+.contact .form-group {
+    margin-bottom: 20px;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #2e3339;
+    border-radius: 4px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #2e3339;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #1f2428;
+}
+
+.contact .contact-info {
+    margin-top: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contact .contact-info p {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #2e3339;
+    color: #fff;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .logo img {
+        height: 40px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .menu.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu.show li {
+        margin: 10px 0;
+    }
+
+    .hero-content {
+        padding: 50px 0px;
+    }
+}
+
+/* Services */
+
+.services {
+    padding: 50px;
+    height: 100vh;
+
+    background-color: #fff;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+.services-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.service-card {
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.service-card p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* About */
+
+.about {
+    padding: 50px;
+    background-color: #fff;
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+.about-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-card {
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.about-card p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
+}
