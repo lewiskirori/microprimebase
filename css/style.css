@@ -323,17 +323,6 @@ text-align: center;
     .hero-content {
     padding: 50px 0px;
     }
-
-    .contact form {
-    max-width: 100%;
-    }
-
-    .contact input[type="text"],
-    .contact input[type="email"],
-    .contact textarea {
-    width: 100%;
-    max-width: 95%;
-    }
 }
 
 /* Services */
@@ -345,7 +334,7 @@ font-family: 'Merriweather', serif;
 }
 
 .services-content {
-max-width: 600px;
+max-width: 100%;
 margin: 0 auto;
 }
 
@@ -365,7 +354,7 @@ margin-bottom: 20px;
 
 .service-card p {
 font-size: 18px;
-color: #777;
+color: #2e3339;
 margin-bottom: 20px;
 }
 
@@ -378,7 +367,7 @@ font-family: 'Schibsted Grotesk', sans-serif;
 }
 
 .about-content {
-max-width: 600px;
+max-width: 100%;
 margin: 0 auto;
 }
 
@@ -398,6 +387,6 @@ margin-bottom: 20px;
 
 .about-card p {
 font-size: 18px;
-color: #777;
+color: #2e3339;
 margin-bottom: 20px;
 }
