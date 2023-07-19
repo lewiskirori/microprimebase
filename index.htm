@@ -32,7 +32,7 @@
                     <li class="current-page home-page"><a onclick="navigateTo('/')" style="cursor: pointer;">Home</a></li>
                     <li class="services-page"><a onclick="navigateTo('services.htm')" style="cursor: pointer;">Services</a></li>
                     <li class="about-page"><a onclick="navigateTo('about.htm')" style="cursor: pointer;">About</a></li>
-                    <li class="contact-page"><a onclick="navigateTo('#contact')" style="cursor: pointer;">Contact</a></li>
+                    <li class="contact-page"><a onclick="scrollToContact()" style="cursor: pointer;">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -44,7 +44,7 @@
             <div class="hero-content">
                 <h1>Microfinance Loan Lending</h1>
                 <p>At PrimeBase, we offer quick and hassle-free loans tailored to your needs, empowering your Financial Dreams. </p>
-                <a onclick="navigateTo('#contact')" style="cursor: pointer;" class="cta-button">Apply Now</a>
+                <a onclick="scrollToContact()" style="cursor: pointer;" class="cta-button">Apply Now</a>
             </div>
         </section>
 
@@ -118,6 +118,10 @@
         <footer>
             <p>&copy; Copyright <span id="current-year"></span> - PrimeBase. All rights reserved.</p>
         </footer>
+
+        <button class="back-to-top-btn">
+            <a class="fas fa-chevron-up"></a>
+        </button>
 
         <script src="js/main.js"></script>
         <script>

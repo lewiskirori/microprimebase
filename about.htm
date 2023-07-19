@@ -33,7 +33,7 @@
                 <li class="current-page home-page"><a onclick="navigateTo('/')" style="cursor: pointer;">Home</a></li>
                 <li class="services-page"><a onclick="navigateTo('services.htm')" style="cursor: pointer;">Services</a></li>
                 <li class="about-page"><a onclick="navigateTo('about.htm')" style="cursor: pointer;">About</a></li>
-                <li class="contact-page"><a onclick="navigateTo('#contact')" style="cursor: pointer;">Contact</a></li>
+                <li class="contact-page"><a onclick="scrollToContact()" style="cursor: pointer;">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -42,8 +42,8 @@
         <div class="about-content">
             <h2><i class="fas fa-users"></i> About Us</h2>
             <div class="about-card">
-                <p>Welcome to Microfinance Loan Lending, your trusted partner in providing financial solutions tailored to your needs. We have been serving our customers with dedication and commitment for over a decade.</p>
-                <p>At Microfinance Loan Lending, we understand the importance of access to credit for individuals and businesses. Our mission is to empower our clients with convenient and flexible loan options that support their goals and aspirations.</p>
+                <p>Welcome to Microfinance Loan Lending Co., your trusted partner in providing financial solutions tailored to your needs. We have been serving our customers with dedication and commitment for over a decade.</p>
+                <p>At PrimeBase, we understand the importance of access to credit for individuals and businesses. Our mission is to empower our clients with convenient and flexible loan options that support their goals and aspirations.</p>
                 <p>Our team of experienced professionals is dedicated to providing exceptional service and guidance throughout the loan process. We strive to make your borrowing experience seamless and transparent, ensuring that you receive the financial support you need when you need it.</p>
                 <p>With a strong emphasis on customer satisfaction, we prioritize building long-lasting relationships with our clients. We are committed to maintaining the highest standards of integrity, transparency, and professionalism in all our interactions.</p>
                 <p>Whether you are looking to start a new venture, expand your business, or meet personal financial goals, Microfinance Loan Lending is here to help. Contact us today to learn more about our services and how we can assist you in achieving your financial dreams.</p>
@@ -54,6 +54,10 @@
     <footer>
         <p>&copy; Copyright <span id="current-year"></span> - PrimeBase. All rights reserved.</p>
     </footer>
+
+    <button class="back-to-top-btn">
+        <a class="fas fa-chevron-up"></a>
+    </button>
 
     <script src="js/main.js"></script>
     <script>
