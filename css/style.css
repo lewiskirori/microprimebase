@@ -302,18 +302,21 @@ border-radius: 4px;
 }
 
 .contact form {
+width: 100%;
 max-width: 400px;
 margin: 0 auto 20px;
 text-align: left;
+display: grid;
+gap: 10px;
 }
 
 .contact .form-group {
-margin-bottom: 20px;
+display: grid;
+gap: 5px;
 }
 
 .contact label {
 display: block;
-margin-bottom: 5px;
 }
 
 .contact input[type="text"],
@@ -325,6 +328,7 @@ outline: none;
 border: 1px solid #2e3339;
 border-radius: 4px;
 font-family: 'Schibsted Grotesk', sans-serif;
+box-sizing: border-box;
 }
 
 .contact textarea {
@@ -436,6 +440,10 @@ text-align: center;
 
     .hero-content {
     padding: 50px 0px;
+    }
+
+    .contact form {
+    max-width: 100%;
     }
 }
 
