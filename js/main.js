@@ -1,5 +1,4 @@
 // Navigation
-
 function navigateTo(url) {
   window.location.href = url;
 }
@@ -18,14 +17,12 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Smooth scrolling
-
 function scrollToContact() {
   const contactSection = document.getElementById("contact");
   contactSection.scrollIntoView({ behavior: "smooth" });
 }
 
 // Scroll to top
-
 var backToTopBtn = document.querySelector(".back-to-top-btn");
 
 window.addEventListener("scroll", function() {
@@ -102,7 +99,6 @@ function scrollTop(duration) {
 }
 
 // Toggle menu
-
 const menuIcon = document.getElementById('menu-icon');
 const menuCloseIcon = document.getElementById('menu-icon-close');
 const menu = document.getElementById('menu');
