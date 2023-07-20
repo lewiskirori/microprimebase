@@ -1,5 +1,4 @@
 /* Global */
-
 body {
 font-family: 'Schibsted Grotesk', sans-serif;    
 margin: 0;
@@ -8,7 +7,6 @@ scroll-behavior: smooth;
 }
 
 /* Header */
-
 header {
 background-color: #f2f2f2;
 padding: 20px;
@@ -147,7 +145,6 @@ pointer-events: auto;
 }
 
 /* Hero */
-
 .hero {
 position: relative;
 height: 100vh;
@@ -194,7 +191,6 @@ background-color: #1f2428;
 }
 
 /* Testimonials */
-
 .testimonials {
 padding: 50px 0;
 background-color: #f1f1f1;
@@ -239,7 +235,6 @@ font-weight: 700;
 }
 
 /* Loan process */
-
 .loan-process {
 padding: 50px 0;
 text-align: center;
@@ -277,7 +272,6 @@ margin-bottom: 10px;
 }
 
 /* Contact */
-
 .contact {
 padding: 50px 0;
 background-color: #f2f2f2;
@@ -357,7 +351,6 @@ margin-bottom: 5px;
 }
 
 /* Scroll to top */
-
 .back-to-top-btn {
 position: fixed;
 bottom: 80px;
@@ -402,7 +395,6 @@ opacity: 0;
 }
 
 /* Footer */
-
 footer {
 background-color: #2e3339;
 color: #fff;
@@ -412,7 +404,6 @@ text-align: center;
 }
 
 /* Responsiveness */
-
 @media only screen and (max-width: 768px) {
     .logo img {
     height: 50px;
@@ -447,8 +438,21 @@ text-align: center;
     }
 }
 
-/* Services */
+/* Scroll bar */
+::-webkit-scrollbar {
+width: 8px;
+}
 
+::-webkit-scrollbar-track {
+background: #f2f2f2;
+}
+
+::-webkit-scrollbar-thumb {
+background-color: #2e3339;
+border-radius: 4px;
+}
+
+/* Services */
 .services {
 padding: 50px;
 background-color: #fff;
@@ -480,7 +484,6 @@ margin-bottom: 20px;
 }
 
 /* About */
-
 .about {
 padding: 50px;
 background-color: #fff;
