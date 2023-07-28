@@ -105,10 +105,13 @@ const menu = document.getElementById('menu');
 
 menuIcon.addEventListener('click', function () {
     menu.classList.toggle('show');
+    menuIcon.classList.toggle('hide');
     menuCloseIcon.classList.toggle('show');
 });
 
 menuCloseIcon.addEventListener('click', function () {
     menu.classList.remove('show');
+    menuIcon.classList.remove('hide');
     menuCloseIcon.classList.remove('show');
 });
+
