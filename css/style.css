@@ -97,6 +97,35 @@ nav ul li a:hover::after {
     cursor: pointer;
     position: relative;
     width: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-icon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.menu-icon:hover::before,
+.menu.show .menu-icon::before {
+    background-color: rgba(0, 0, 0, 0.2);
+    outline: 2px solid transparent;
+}
+
+.menu-icon:focus::before {
+    outline: 2px solid #1f2428;
+    outline-offset: 3px;
+}
+
+.menu.show .menu-icon::before {
+    box-shadow: 0 0 0 2px #1f2428;
 }
 
 .menu-icon-bar {
